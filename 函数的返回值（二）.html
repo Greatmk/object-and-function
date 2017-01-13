@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<script>
+    		  //求任意2个数中的最大值
+    		  function getMax(num1 , num2){
+
+    		  	var max = num1 >num2 ? num1 : num2;
+
+    		  	return max;
+    		  }
+    		  console.log(getMax(1,5));
+
+    		    //求任意3个数中的最大值
+    		    function getMax3(num1 , num2 , num3){
+
+    		    	var Max = getMax(num1 , num2);
+    		    	Max = getMax(Max , num3);
+    		    	return Max;
+    		    }
+
+    		    console.log(getMax3(1 , 34 , 25));
+
+
+
+
+
+    	</script>
+    </body>
+</html>

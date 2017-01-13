@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<script>
+    		var name = 'xiaoming';
+    		var stu = {//键值对
+			    name:"zs",
+			    age:18,
+			    height:180,
+			    weight:120,
+			    score:100,
+			    attack: function (name) {
+			        console.log(this.name + "打了" + name + "一巴掌");
+			    },
+			    sayHi: function () {
+			        console.log("大家好，我是"+this.name);
+			    }
+		};
+		stu.attack();
+		stu.sayHi();
+    	</script>
+    </body>
+</html>

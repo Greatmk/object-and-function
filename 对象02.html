@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<script>
+    		//无序的遍历方式
+			var stu = {
+			    name: "zhangsan",
+			    age: 18,
+			    sex: "不详",
+			    sayHi: function () {
+			        console.log("大家好,我是" + this.name);
+			    }
+			}
+
+			for(var key in stu) {
+			    console.log(key);
+			    console.log(stu[key]);//.语法直接找对象里面的标识符
+			}
+    	</script>
+    </body>
+</html>
